@@ -51,7 +51,7 @@ function draw_b() {
   b_context.fillText("Nico Wright", 50, 80); // changed text to my name
 }
 	
-function draw_c() {
+function draw_c() { // function that adds image to canvas
   var c_canvas = document.getElementById("a"); // find the canvas on the page, where the action will take place
   var c_context = c_canvas.getContext("2d");
   var wolf = new Image();
@@ -59,6 +59,12 @@ function draw_c() {
   wolf.onload = function() {
   c_context.drawImage(wolf, 100, 20, 100, 100);
   };
+}
+
+function draw_d() { // this is function that clears canvas
+  var d_canvas = document.getElementById("a"); // find the canvas on the page, where the action will take place
+  var d_context = d_canvas.getContext("2d");
+  d_context.clearRect(1, 1, 200, 200); // clears the canvas
 }
 	
 </script>
@@ -114,6 +120,8 @@ function draw_c() {
 	<button onclick="draw_b();"> Draw Name</button> <!-- this is the button the draws my name on the canvas -->
 
 	<button onclick="draw_c();"> Draw Image</button> <!-- this is the button the image my name on the canvas -->
+
+	<button onclick="draw_d();"> Clears canvas</button> <!-- this is the button that clears the canvas -->
 
 	</div>
 
