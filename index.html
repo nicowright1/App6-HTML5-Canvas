@@ -45,6 +45,12 @@ function draw_a() {
   a_context.fillRect(15, 15, 30, 50); <!-- changed the size of the rectangle to make smaller -->
 }
 
+function draw_b() {
+  var a_canvas = document.getElementById("a"); <!-- find the canvas on the page, where the action will take place -->
+  var a_context = b_canvas.getContext("2d");
+  a_context.fillText("Nico Wright", 50, 80); <!-- changed text to my name -->
+}
+	
 </script>
 
 
@@ -94,6 +100,9 @@ function draw_a() {
 	</div>
 
 	<button onclick="draw_a();"> Draw Rectangle</button> <!-- this is the button the draws rectangle on the canvas -->
+	
+	<button onclick="draw_b();"> Draw Name</button> <!-- this is the button the draws my name on the canvas -->
+
 	</div>
 
 </body>
