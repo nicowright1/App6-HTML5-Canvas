@@ -3,8 +3,7 @@
 <!-- The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only.  Any user of this code does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.
  
 THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
- 
- 
+
 Authors in chronological order of contribution:
 Tim Riedel
 Nico Wright
@@ -17,10 +16,10 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-blah, blah, blah,
+Draws different things (images, text, shapes) on canvas 
  
 Known Issues:
-blah, blah, blah, blah
+None
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
@@ -32,7 +31,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
       <link rel="stylesheet" href="w3.css">
       <link rel="stylesheet" href="w3-colors-flat.css">
    </head> 
-
 
 <script>
 var docMod = document.lastModified; // loads last modified time stamp into docMod variable
@@ -57,7 +55,7 @@ function draw_c() { // function that adds image to canvas
   var wolf = new Image();
   wolf.src = "https://earthjustice.org/sites/default/files/styles/image_800x600/public/graywolf_holly_kuchera_shutterstock.jpg?itok=PSMsKhBo";
   wolf.onload = function() {
-  c_context.drawImage(wolf, 100, 20, 100, 100);
+  c_context.drawImage(wolf, 100, 20, 100, 100); // draws wolf image on page and makes it smaller
   };
 }
 
@@ -68,8 +66,6 @@ function draw_d() { // this is function that clears canvas
 }
 	
 </script>
-
-
 
 <style>	
 .body {
