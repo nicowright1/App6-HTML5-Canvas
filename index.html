@@ -42,8 +42,9 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 function draw_b() {
   var b_canvas = document.getElementById("a"); // find the canvas on the page, where the action will take place
   var b_context = b_canvas.getContext("2d");
-  b_context.fillRect(50, 25, 150, 100);
-	
+  b_context.fillRect(15, 15, 30, 50); // changed the size of the rectangle to make smaller
+}
+
 </script>
 
 
@@ -92,7 +93,8 @@ function draw_b() {
 	</canvas>
 	</div>
 
-	<a class="w3-btn w3-black onclick="draw_b();"> Draw Recantgle
+	<button onclick="draw_b();"> Draw Rectangle</button> // this is the button the draws rectangle on the canvas
+	</div>
 
 </body>
 </html>
